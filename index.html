@@ -3,106 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alekhya Pakala | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio of Alekhya Pakala, a Java-focused graduate building a career in software development and IT.">
+    <title>Alekhya Pakala | Java Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<nav class="navbar">
-    <div class="nav-container">
-        <h1 class="logo">Alekhya<span></span></h1>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<section id="home" class="home">
-    <div class="hero-content">
-        <h2>Hi, I'm <span>Alekhya Pakala</span></h2>
-        <p id="typing-text"></p>
-        <div class="home-buttons">
-            <a href="#projects" class="btn primary">View Projects</a>
-            <a href="resume.pdf" download class="btn secondary">Download Resume</a>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a class="brand" href="#home">
+                <span class="brand-name">Alekhya Pakala</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </div>
-</section>
+    </nav>
 
-<section id="about" class="section reveal">
-    <h2>About Me</h2>
-    <div class="glass-card">
-        <p>
-            I am an Electronics and Communication Engineering undergraduate at **PBR Visvodaya Institute of Technology and Science**. 
-            I bridge the gap between hardware and software, with a strong interest in **Java development** and **Embedded Systems**. 
-            I am currently seeking entry-level roles where I can apply my problem-solving skills.
-        </p>
-    </div>
-</section>
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-layout">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Java Developer Portfolio</p>
+                    <h1>Hi, I&apos;m Alekhya. I want to grow in Java and the IT industry.</h1>
+                    <p class="hero-lead">
+                        I am a recent graduate focused on Java, software fundamentals, and building the discipline needed to contribute well in real development teams.
+                    </p>
+                    <p id="typing-text" class="typing-text" aria-live="polite"></p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-dark">View Projects</a>
+                        <a href="Alekhya_Resume.pdf" class="btn btn-light" download>Download Resume</a>
+                    </div>
+                    <div class="hero-strip">
+                        <span>Java</span>
+                        <span>OOP</span>
+                        <span>Frontend Basics</span>
+                        <span>IT Career Focus</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="skills" class="section reveal">
-    <h2>Technical Arsenal</h2>
-    <div class="skills-container">
-        <span class="skill-pill">Java</span>
-        <span class="skill-pill">OOP Concepts</span>
-        <span class="skill-pill">Verilog</span>
-        <span class="skill-pill">FPGA</span>
-        <span class="skill-pill">HTML5</span>
-        <span class="skill-pill">CSS3</span>
-        <span class="skill-pill">JavaScript</span>
-    </div>
-</section>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">About Me</p>
+                    <h2>Software-focused, career-ready, and serious about growing as a developer.</h2>
+                </div>
+                <div class="about-grid">
+                    <article class="panel reveal">
+                        <p>
+                            I completed my B.Tech at PBR Visvodaya Institute of Technology and Science and I am now focusing my path on software development opportunities. I enjoy building structured logic, understanding how applications work, and improving steadily through practice.
+                        </p>
+                    </article>
+                    <article class="panel reveal">
+                        <h3>What I&apos;m Looking For</h3>
+                        <p>
+                            I am actively looking for entry-level Java or IT roles where I can learn from a team, strengthen my technical foundation, and contribute with consistency.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<section id="projects" class="section reveal">
-    <h2>Featured Work</h2>
-    <div class="project-grid">
-        <div class="project-card">
-            <div class="project-badge">Java</div>
-            <h3>ATM Functionality</h3>
-            <p>Developed a console-based application featuring PIN validation, OTP verification, and balance management using OOP.</p>
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Skills</p>
+                    <h2>The strengths I want recruiters to notice quickly.</h2>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-card highlight reveal">
+                        <p class="card-label">Main Strength</p>
+                        <h3>Java</h3>
+                        <p>I want to build my professional path around Java development, clean logic, and object-oriented programming.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <p class="card-label">Software Foundation</p>
+                        <h3>IT Readiness</h3>
+                        <p>Comfortable with OOP concepts, application flow, HTML, CSS, JavaScript, communication, and continuous learning.</p>
+                    </article>
+                </div>
+                <div class="chip-row reveal">
+                    <span class="chip">Java</span>
+                    <span class="chip">OOP Concepts</span>
+                    <span class="chip">Problem Solving</span>
+                    <span class="chip">HTML5</span>
+                    <span class="chip">CSS3</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">Communication</span>
+                    <span class="chip">Team Learning</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Projects aligned with my move into software and IT.</h2>
+                </div>
+                <div class="project-stack">
+                    <article class="project-card featured reveal">
+                        <div class="project-meta">
+                            <span>01</span>
+                            <span>Java Project</span>
+                        </div>
+                        <h3>ATM Functionality System</h3>
+                        <p>
+                            Built a console-based Java application with PIN validation, OTP verification, balance enquiry, and transaction handling using object-oriented programming concepts.
+                        </p>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-meta">
+                            <span>02</span>
+                            <span>Portfolio Project</span>
+                        </div>
+                        <h3>Frontend Practice Portfolio</h3>
+                        <p>
+                            Updated this portfolio using HTML, CSS, and JavaScript to present my profile clearly for Java, software, and IT opportunities.
+                        </p>
+                    </article>
+                    <article class="project-card featured reveal">
+                        <div class="project-meta">
+                            <span>03</span>
+                            <span>Java Project</span>
+                        </div>
+                        <h3>School Management System</h3>
+                        <p class="project-description">
+                            Built a responsive web-based application to manage student records, teacher details, and academic information.
+                        </p>
+                        <a href="https://alekhyapakala.github.io/SchoolManagement/" class="btn btn-light" target="_blank" rel="noreferrer">View Project</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Education</p>
+                    <h2>The academic background behind my software journey.</h2>
+                </div>
+                <div class="education-grid">
+                    <article class="education-card reveal">
+                        <p class="card-label">2021 - 2025</p>
+                        <h3>B.Tech</h3>
+                        <p>PBR Visvodaya Institute of Technology and Science</p>
+                        <strong>73%</strong>
+                    </article>
+                    <article class="education-card reveal">
+                        <p class="card-label">Intermediate</p>
+                        <h3>MPC</h3>
+                        <p>Narayana Junior College</p>
+                        <strong>93%</strong>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-last">
+            <div class="container">
+                <div class="contact-panel reveal">
+                    <div class="contact-copy">
+                        <p class="eyebrow">Contact</p>
+                        <h2>Open to Java, software, and IT opportunities.</h2>
+                        <p>
+                            If you are hiring for an entry-level role, I would love the chance to learn, contribute, and grow as a developer in your team.
+                        </p>
+                    </div>
+                    <div class="contact-links">
+                        <a href="mailto:alekhyavec007@gmail.com">alekhyavec007@gmail.com</a>
+                        <a href="tel:+918179200594">+91 8179200594</a>
+                        <a href="https://www.linkedin.com/in/pakala-alekhya-63a731266" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" aria-label="Back to top">&uarr;</button>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Alekhya Pakala. Built around my Java and IT career goals.</p>
         </div>
-        <div class="project-card">
-            <div class="project-badge">Verilog</div>
-            <h3>Smart Car Parking</h3>
-            <p>Designed an FPGA-based system for parking slot detection and automated gate control logic.</p>
-        </div>
-    </div>
-</section>
+    </footer>
 
-<section id="education" class="section reveal">
-    <h2>Education</h2>
-    <div class="timeline">
-        <div class="edu-item glass-card">
-            <h3>B.Tech – ECE (2021–2025)</h3>
-            <p>PBR Visvodaya Institute of Tech | **73%**</p>
-        </div>
-        <div class="edu-item glass-card">
-            <h3>Intermediate – MPC</h3>
-            <p>Narayana Junior College | **93%**</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="section reveal">
-    <div class="contact-card glass-card">
-        <h2>Let's Connect</h2>
-        <p>Email: <a href="mailto:alekhyavec007@gmail.com">alekhyavec007@gmail.com</a></p>
-        <p>Phone: +91 8179200594</p>
-        <a href="https://www.linkedin.com/in/pakala-alekhya-63a731266" target="_blank" class="btn primary">LinkedIn Profile</a>
-    </div>
-</section>
-
-<button id="backToTop">↑</button>
-
-<footer>
-    <p>© 2026 Alekhya Pakala | Portfolio</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
